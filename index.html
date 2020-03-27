@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Product</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="nav-container">
+        <img src="" alt="" id="header-img" />
+        <nav id="nav-bar">
+          <ol>
+            <li>
+              <a class="nav-link" href="#howitworks" id="nav-link"
+                >How it works</a
+              >
+            </li>
+            <li><a class="nav-link" href="#getinvolved">Get involved</a></li>
+            <li>
+              <a class="nav-link" href="#ourteam" id="nav-link">Our team</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="howitworks">
+        <div class="howitworks-description">
+          <h3>how it works</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+            sodales blandit justo id posuere.
+          </p>
+        </div>
+        <div class="video">
+          <iframe
+            id="video"
+            width="400"
+            height="315"
+            src="https://www.youtube.com/embed/TNN7_nTwJQo"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="getinvolved">
+        <h3>Get involved</h3>
+        <span class="getinvolved-description">Subscribe to our newsletter</span>
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+          <label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address here"
+            />
+          </label>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </section>
+      <section id="ourteam">
+        <h3 class="ourteam-title">Our team</h3>
+        <p class="ourteam-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales
+          blandit justo id posuere.
+        </p>
+        <div class="team">
+          <div class="teamCard">
+            <span>Joshua</span>
+            <img src="./public/pic1.jpeg" alt="" />
+          </div>
+          <div class="teamCard">
+            <span>Rodriguez</span>
+            <img src="./public/pic2.jpg" alt="" />
+          </div>
+          <div class="teamCard">
+            <span>Alfredo</span>
+            <img src="./public/pic3.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Copyright 2020, Open Market</span>
+      <ul>
+        <li><a href="">Privacy</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

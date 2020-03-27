@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #fff;
+  color: black;
+}
+
+/*  Head    */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0 12px;
+  padding: 16px;
+}
+
+#nav-bar {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: flex-end;
+  margin-right: 80px;
+}
+
+#nav-bar ol {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+  list-style: none;
+}
+#nav-bar li {
+  margin: 0 12px;
+}
+#nav-bar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*    Main    */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 102px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 84%;
+  margin: 24px 18px;
+  min-height: 30vh;
+  height: 65vh;
+}
+
+section h3 {
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-responsive {
+  display: flex;
+
+  margin-top: 18px;
+}
+
+#howitworks {
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50vh;
+}
+
+.howitworks-description {
+  flex-direction: column;
+  width: 60%;
+  margin-left: 38px;
+}
+/*
+.video-responsive {
+  width: 30%;
+  height: 100%;
+  margin-right: 42px;
+}
+.video-responsive iframe {
+  width: 100%;
+}
+*/
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  width: 60%;
+  height: 83%;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/*  Get involved  */
+#getinvolved {
+  display: flex;
+  justify-content: flex-start;
+  height: 20vh;
+}
+
+.getinvolved-description {
+  margin-top: -16px;
+
+  font-size: 14px;
+}
+
+form {
+  width: 60%;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22px;
+}
+
+form input {
+  margin: 8px 0;
+  padding: 12px;
+  width: 100%;
+}
+
+#submit {
+  background: green;
+  color: #fff;
+  border: 4px solid green;
+  border-radius: 4px;
+}
+
+/*  our team  */
+#ourteam {
+  justify-content: flex-start;
+}
+.ourteam-description {
+  margin: 0 18px;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+@media (max-width: 775px) {
+  .team {
+    flex-direction: column;
+  }
+}
+.teamCard {
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+}
+
+.teamCard span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 14px 0;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.teamCard img {
+  width: 100%;
+  height: 100%;
+}
+/*  footer  */
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: black;
+  color: #fff;
+  padding: 16px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer li {
+  margin: 0 4px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  iframe {
+    width: 100%;
+    height: 80%;
+  }
+  #howitworks {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .howitworks-description {
+    margin-left: 0px;
+  }
+  #nav-bar {
+    justify-content: center;
+    width: 100%;
+    margin-right: 62px;
+  }
+
+  footer {
+    padding: 4px;
+    font-size: 12px;
+  }
+}
